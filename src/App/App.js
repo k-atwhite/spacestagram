@@ -1,8 +1,8 @@
 import './App.css';
-import { fetchLatestPhotos } from './apiCalls';
+import { fetchLatestPhotos } from '../apiCalls';
 
 function App() {
-  fetchData();
+  fetchLatestPhotos();
 
   return (
     <div className="App">
