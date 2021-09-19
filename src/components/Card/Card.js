@@ -1,11 +1,12 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ title, image, id, key }) => {
+const Card = ({ title, image, rover, earthDate, camera, id }) => {
   return (
     <div className="card">
-      <h3>{title}</h3>
       <img src={image} alt={title} className="image"></img>
+      <p>Rover: {rover}</p>
+      <p>Date taken: {earthDate}</p>
     </div>
   );
 };
