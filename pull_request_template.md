@@ -9,5 +9,7 @@
 - [ ] Refactoring
 
 ## Checklist:
-- [ ] My code follows the Turing's guidelines of this project
 - [ ] My changes generate no new errors/warnings
+- [ ] No console errors
+- [ ] All tests passing
+- [ ] CI successful
