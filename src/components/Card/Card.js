@@ -5,7 +5,7 @@ const Card = ({ title, image, id, key }) => {
   return (
     <div className="card">
       <h3>{title}</h3>
-      <img src={image} alt={title}></img>
+      <img src={image} alt={title} className="image"></img>
     </div>
   );
 };
