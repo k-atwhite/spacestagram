@@ -1,13 +1,15 @@
 import React from 'react';
 import './Cards.css';
-const Cards = ({ images }) => {
-  const imageCards = images.map((image) => {
+import Card from '../Card/Card';
+
+const Cards = ({ data }) => {
+  const imageCards = data.map((datum) => {
     return (
       <Card
-        title={idea.title}
-        description={idea.description}
-        id={idea.id}
-        key={idea.id}
+        title={`${datum.rover.name} ${datum.camera.full_name} ${datum.earth_date}`}
+        image={datum.img_src}
+        id={datum.id}
+        key={datum.id}
       />
     );
   });
