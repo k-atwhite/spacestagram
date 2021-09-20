@@ -35,7 +35,23 @@
 }
 
 @media screen and (min-width: 768px) {
+  .card {
+    width: 45vw;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #c4c8ce;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .card {
+    width: 22vw;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #c4c8ce;
+  }
+
+  .fa-heart {
+    padding: 1vw;
+  }
 }
