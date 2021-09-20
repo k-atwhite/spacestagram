@@ -15,7 +15,11 @@ const Card = ({
 
   const handleLike = () => {
     setLikeStatus(!liked);
-    likePhoto(entireCard);
+    if (liked) {
+      unlikePhoto(id);
+    } else {
+      likePhoto(entireCard);
+    }
   };
 
   return (

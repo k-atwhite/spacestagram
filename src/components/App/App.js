@@ -25,7 +25,10 @@ const App = () => {
     setShownCards(false);
   };
 
-  const unlikePhoto = () => {};
+  const unlikePhoto = (id) => {
+    let updatedFavorites = likedPhotos.filter((photo) => photo.id !== id);
+    setLiked(updatedFavorites);
+  };
 
   return (
     <div className="App">

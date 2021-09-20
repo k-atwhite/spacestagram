@@ -13,6 +13,7 @@ const Cards = ({ data, likePhoto, unlikePhoto }) => {
         id={datum.id}
         key={datum.id}
         likePhoto={likePhoto}
+        unlikePhoto={unlikePhoto}
         entireCard={datum}
       />
     );
