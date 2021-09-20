@@ -45,7 +45,7 @@
 I had a lot of fun working on this project for [Shopify's Front End Intern challenge](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit)
 
 ### Built With
-[![spacestagram](https://circleci.com/gh/k-atwhite/spacestagram.svg?style=shield)](https://app.circleci.com/pipelines/github/k-atwhite/spacestagram)
+[![spacestagram](https://circleci.com/gh/k-atwhite/spacestagram.svg?style=svg)](https://app.circleci.com/pipelines/github/k-atwhite/spacestagram)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3cde6c01-55e0-43df-bb9c-71fec55391f9/deploy-status)](https://app.netlify.com/sites/spacestagram-kw/deploys)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
