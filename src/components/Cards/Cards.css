@@ -1,6 +1,21 @@
 .image-container {
-  /* padding: 5vw; */
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 3vw;
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1vw;
+  }
 }

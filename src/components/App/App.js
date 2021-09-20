@@ -7,10 +7,12 @@ const App = () => {
   const [photos, setPhotos] = useState([]);
   const [likedPhotos, setLiked] = useState([]);
   const [showingLiked, setShownCards] = useState(false);
-  // const [error, setError] = useState('');
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    fetchLatestPhotos().then((data) => setPhotos(data.latest_photos));
+    fetchLatestPhotos()
+      .then((data) => setPhotos(data.latest_photos))
+      .catch(() => setError('Something went wrong...'));
   }, []);
 
   const likePhoto = (card) => {
@@ -30,23 +32,28 @@ const App = () => {
     setLiked(updatedFavorites);
   };
 
+  const loadingMsg = !photos.length && !error.length && (
+    <h2>Loading your images...</h2>
+  );
+
   return (
-    <div className="App">
+    <main className="App">
       <header className="header">
         <h1>SPACESTAGRAM</h1>
-        <button className="fav-btn" onClick={displayLikedPhotos}>
+        <button tabIndex="1" className="fav-btn" onClick={displayLikedPhotos}>
           my favorites
         </button>
-        <button className="all-btn" onClick={displayAllPhotos}>
+        <button tabIndex="2" className="all-btn" onClick={displayAllPhotos}>
           all images
         </button>
       </header>
+      {loadingMsg}
       <Cards
         data={!showingLiked ? photos : likedPhotos}
         likePhoto={likePhoto}
         unlikePhoto={unlikePhoto}
       />
-    </div>
+    </main>
   );
 };
 
