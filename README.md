@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/49215782/133954755-b82c0188-83fe-4141-8f73-9931a5b29a39.png" alt="Logo" width="100" height="100">
+    <img src="https://spacestagram-kw.netlify.app/" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Spacestagram</h3>
