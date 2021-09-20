@@ -7,7 +7,7 @@
   <h3 align="center">Spacestagram</h3>
 
   <p align="center">
-    A daily reminder to wonder at the great expanse
+    Image-sharing from the final frontier
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
