@@ -27,6 +27,7 @@ const Card = ({
       <i
         className={`fas fa-heart ${liked && 'favorite'}`}
         id={id}
+        tabIndex={id}
         onClick={() => handleLike()}
       ></i>
       <img

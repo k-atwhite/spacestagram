@@ -40,10 +40,10 @@ const App = () => {
     <main className="App">
       <header className="header">
         <h1>SPACESTAGRAM</h1>
-        <button className="fav-btn" onClick={displayLikedPhotos}>
+        <button tabIndex="1" className="fav-btn" onClick={displayLikedPhotos}>
           my favorites
         </button>
-        <button className="all-btn" onClick={displayAllPhotos}>
+        <button tabIndex="2" className="all-btn" onClick={displayAllPhotos}>
           all images
         </button>
       </header>
