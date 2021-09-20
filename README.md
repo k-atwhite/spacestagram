@@ -10,7 +10,7 @@
     Image-sharing from the final frontier
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://app.netlify.com/sites/spacestagram-kw/deploys">View Demo</a>
     ·
     <a href="https://github.com/chrisccerami/mars-photo-api">API Source</a>
     ·
@@ -18,6 +18,8 @@
   </p>
 </p>
 
+[![spacestagram](https://circleci.com/gh/k-atwhite/spacestagram.svg?style=shield)](https://app.circleci.com/pipelines/github/k-atwhite/spacestagram)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3cde6c01-55e0-43df-bb9c-71fec55391f9/deploy-status)](https://app.netlify.com/sites/spacestagram-kw/deploys)
 
 
 <!-- TABLE OF CONTENTS -->
