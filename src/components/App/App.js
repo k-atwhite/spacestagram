@@ -7,10 +7,12 @@ const App = () => {
   const [photos, setPhotos] = useState([]);
   const [likedPhotos, setLiked] = useState([]);
   const [showingLiked, setShownCards] = useState(false);
-  // const [error, setError] = useState('');
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    fetchLatestPhotos().then((data) => setPhotos(data.latest_photos));
+    fetchLatestPhotos()
+      .then((data) => setPhotos(data.latest_photos))
+      .catch(() => setError('Something went wrong...'));
   }, []);
 
   const likePhoto = (card) => {
