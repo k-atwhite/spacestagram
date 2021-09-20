@@ -10,7 +10,7 @@
     Image-sharing from the final frontier
     <br />
     <br />
-    <a href="https://spacestagram-kw.netlify.app/s">View Demo</a>
+    <a href="https://spacestagram-kw.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/chrisccerami/mars-photo-api">API Source</a>
     ·
