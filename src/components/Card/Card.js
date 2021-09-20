@@ -35,8 +35,8 @@ const Card = ({
         className="image"
         id="image"
       ></img>
-      <p>Rover: {rover}</p>
-      <p>Date taken: {earthDate}</p>
+      <p className="description">Rover: {rover}</p>
+      <p className="description">Date taken: {earthDate}</p>
     </div>
   );
 };

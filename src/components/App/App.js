@@ -34,8 +34,12 @@ const App = () => {
     <div className="App">
       <header className="header">
         <h1>SPACESTAGRAM</h1>
-        <button onClick={displayLikedPhotos}>my favorites</button>
-        <button onClick={displayAllPhotos}>all images</button>
+        <button className="fav-btn" onClick={displayLikedPhotos}>
+          my favorites
+        </button>
+        <button className="all-btn" onClick={displayAllPhotos}>
+          all images
+        </button>
       </header>
       <Cards
         data={!showingLiked ? photos : likedPhotos}
