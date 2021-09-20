@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="https://spacestagram-kw.netlify.app/" alt="Logo" width="100" height="100">
+    <img src="https://user-images.githubusercontent.com/49215782/133957842-2cb1b349-8a80-46c1-b7a8-6caab7d90d55.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Spacestagram</h3>
@@ -10,7 +10,7 @@
     Image-sharing from the final frontier
     <br />
     <br />
-    <a href="https://app.netlify.com/sites/spacestagram-kw/deploys">View Demo</a>
+    <a href="https://spacestagram-kw.netlify.app/s">View Demo</a>
     ·
     <a href="https://github.com/chrisccerami/mars-photo-api">API Source</a>
     ·
