@@ -3,11 +3,26 @@ html {
 }
 main {
   font-family: 'Space Mono', monospace;
+  padding-top: 20vw;
 }
 
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #858b97;
+}
+
+h1 {
+  margin: 0vw 3vw;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
 button {
   font-family: 'Space Mono', monospace;
-  margin: 3vw 1vw;
+  margin: 3vw 3vw;
   color: #494949 !important;
   text-transform: uppercase;
   background: #ffffff;
@@ -21,19 +36,6 @@ button:hover {
   background: #0fa;
   border-color: #0fa;
   transition: all 0.4s ease 0s;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  background-color: #858b97;
-}
-
-h1 {
-  margin: 0;
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
 
 @media screen and (min-width: 768px) {
