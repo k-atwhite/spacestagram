@@ -1,7 +1,8 @@
 beforeEach(() => {
-  cy.fixture('mockData').then((data) => {
+  cy.fixture('mockData').then((marsData) => {
     cy.intercept(
-      'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=9sRsIjAG7N8bqqRQAKa62riI2qnxklLWIs4DcDvX'
+      'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=9sRsIjAG7N8bqqRQAKa62riI2qnxklLWIs4DcDvX',
+      marsData
     );
   });
 
@@ -43,6 +44,6 @@ describe('Homepage', () => {
   });
 
   it('Clicking the show all button should return to all images', () => {
-    // cy.get('all-button').click();
+    cy.get('.all-btn').click().get('.card').should('have.length', 6);
   });
 });
