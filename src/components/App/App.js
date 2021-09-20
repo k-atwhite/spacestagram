@@ -5,18 +5,43 @@ import Cards from '../Cards/Cards';
 
 const App = () => {
   const [photos, setPhotos] = useState([]);
-  const [error, setError] = useState('');
+  const [likedPhotos, setLiked] = useState([]);
+  const [showingLiked, setShownCards] = useState(false);
+  // const [error, setError] = useState('');
 
   useEffect(() => {
     fetchLatestPhotos().then((data) => setPhotos(data.latest_photos));
   }, []);
 
+  const likePhoto = (card) => {
+    setLiked([card, ...likedPhotos]);
+  };
+
+  const displayLikedPhotos = () => {
+    setShownCards(true);
+  };
+
+  const displayAllPhotos = () => {
+    setShownCards(false);
+  };
+
+  const unlikePhoto = (id) => {
+    let updatedFavorites = likedPhotos.filter((photo) => photo.id !== id);
+    setLiked(updatedFavorites);
+  };
+
   return (
     <div className="App">
       <header className="header">
         <h1>SPACESTAGRAM</h1>
+        <button onClick={displayLikedPhotos}>my favorites</button>
+        <button onClick={displayAllPhotos}>all images</button>
       </header>
-      <Cards data={photos} />
+      <Cards
+        data={!showingLiked ? photos : likedPhotos}
+        likePhoto={likePhoto}
+        unlikePhoto={unlikePhoto}
+      />
     </div>
   );
 };

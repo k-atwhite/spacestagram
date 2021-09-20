@@ -2,7 +2,7 @@ import React from 'react';
 import './Cards.css';
 import Card from '../Card/Card';
 
-const Cards = ({ data }) => {
+const Cards = ({ data, likePhoto, unlikePhoto }) => {
   const imageCards = data.map((datum) => {
     return (
       <Card
@@ -12,6 +12,9 @@ const Cards = ({ data }) => {
         camera={datum.camera.name}
         id={datum.id}
         key={datum.id}
+        likePhoto={likePhoto}
+        unlikePhoto={unlikePhoto}
+        entireCard={datum}
       />
     );
   });

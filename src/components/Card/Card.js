@@ -1,10 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Card.css';
 
-const Card = ({ title, image, rover, earthDate, camera, id }) => {
+const Card = ({
+  image,
+  rover,
+  earthDate,
+  camera,
+  id,
+  entireCard,
+  likePhoto,
+  unlikePhoto
+}) => {
+  const [liked, setLikeStatus] = useState(false);
+
+  const handleLike = () => {
+    setLikeStatus(!liked);
+    if (liked) {
+      unlikePhoto(id);
+    } else {
+      likePhoto(entireCard);
+    }
+  };
+
   return (
     <div className="card">
-      <img src={image} alt={title} className="image"></img>
+      <i
+        className={`fas fa-heart ${liked && 'favorite'}`}
+        id={id}
+        onClick={() => handleLike()}
+      ></i>
+      <img
+        src={image}
+        alt={`${rover} ${camera}`}
+        className="image"
+        id="image"
+      ></img>
       <p>Rover: {rover}</p>
       <p>Date taken: {earthDate}</p>
     </div>
