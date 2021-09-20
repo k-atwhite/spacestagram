@@ -22,7 +22,7 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li>
+    <li>g
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
@@ -37,14 +37,16 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-I had a lot of fun working on this project for [Shopify's Front End Intern challenge](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit)
+I had a lot of fun working on this project for [Shopify's Front End Intern challenge](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit). Using NASA's incredible API offerings - I requested data and displayed the image, and some details about that particular image. The API is quite robust, and playing with different types of endpoints yeilds a wide array of possible image sets. I chose to display all the latest photos from the Mars Curiosity Rover.
+
+I would like to showcase a simple, minimal interface, with small details to improve user exeperience while maintaining high accessibility.
 
 ### Built With
+
 [![spacestagram](https://circleci.com/gh/k-atwhite/spacestagram.svg?style=svg)](https://app.circleci.com/pipelines/github/k-atwhite/spacestagram)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3cde6c01-55e0-43df-bb9c-71fec55391f9/deploy-status)](https://app.netlify.com/sites/spacestagram-kw/deploys)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -57,9 +59,14 @@ I had a lot of fun working on this project for [Shopify's Front End Intern chall
 
 #### Accessibility
 
+Accessibility is key. My training as a Front End Developer emphasized the necessity of considering high color contrast, semantic html, ease of tabbing through elements, and supporting text to speech readers. In this project, I ensured every element was tabbable, each image had alt text, colors were contrasted, and there was no div soup!
+
 #### Responsiveness
 
+I developed this app with "mobile first" in mind, ensuring that the likely primary user - a mobile user - had a seamless experience. A media query for a tablet and a laptop provides the same experience for larger screen users. Using percentages and width height rather than pixels ensures that as the screen size changes, so do the elements.
+
 ### Installation
+
 ```
 git clone git@github.com:k-atwhite/spacestagram.git
 cd spacestagram
@@ -71,11 +78,11 @@ npm start
 
 <p align="center"><img src=https://media.giphy.com/media/yJJPleogN0lLOIRBiD/giphy.gif?cid=790b761149f6c8f73d64143a1004072ebcd9cbfe8e99f0df&rid=giphy.gif&ct=g ></p>
 
-
+Upon opening the app - a user can see a scrolling list of images from Mars curiosity taken recently. A user can tap the heart in the top left corner like "like" and image - click it again if they decide they don't like it anymore - and checkout out their collection of liked images by clicking the "My Favs" button. To see all available images, click on "All Images". Each image also has details, including the name of the camera, the Earth date it was taken, and the name of the Rover.
 
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+This app has so much potential by nature of the many ways you can query data. One fun addition would be to add filters to cusotomize which images are available - a user could choose the rover, the specific camera, even the specific earth date (or Martian date!). And, with an ability to like photos, this app is also begging for a log-in function.
 
 ## Contact
 
@@ -85,5 +92,3 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
   </tr>
     <td><img src="https://avatars.githubusercontent.com/u/49215782?v=4" alt="Kat GH image" width="150" height="auto" /></td>
 </table>
-
-
