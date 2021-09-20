@@ -32,8 +32,12 @@ const App = () => {
     setLiked(updatedFavorites);
   };
 
+  const loadingMsg = !photos.length && !error.length && (
+    <h2>Loading your images...</h2>
+  );
+
   return (
-    <div className="App">
+    <main className="App">
       <header className="header">
         <h1>SPACESTAGRAM</h1>
         <button className="fav-btn" onClick={displayLikedPhotos}>
@@ -43,12 +47,13 @@ const App = () => {
           all images
         </button>
       </header>
+      {loadingMsg}
       <Cards
         data={!showingLiked ? photos : likedPhotos}
         likePhoto={likePhoto}
         unlikePhoto={unlikePhoto}
       />
-    </div>
+    </main>
   );
 };
 

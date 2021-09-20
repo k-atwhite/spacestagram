@@ -1,16 +1,31 @@
 .card {
-  box-sizing: border-box;
-  border: 3px solid black;
-  padding: 1vw;
   width: 95vw;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #c4c8ce;
 }
 
 .image {
-  width: 87vw;
-  padding: 1vw;
-  margin: 1vw;
+  width: 100%;
+}
+
+.fa-heart {
+  position: absolute;
+  padding: 3vw;
+  color: white;
+  font-size: 150%;
 }
 
 .favorite {
-  color: red;
+  color: #0fa;
+}
+
+.description-wrapper {
+  padding-left: 2vw;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
