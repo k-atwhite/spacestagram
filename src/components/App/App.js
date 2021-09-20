@@ -36,6 +36,10 @@ const App = () => {
     <h2>Loading your images...</h2>
   );
 
+  const noFavMsg = showingLiked && !likedPhotos.length && (
+    <h2>Add some favs!</h2>
+  );
+
   return (
     <main className="App">
       <header className="header">
@@ -48,6 +52,7 @@ const App = () => {
         </button>
       </header>
       {loadingMsg}
+      {noFavMsg}
       <Cards
         data={!showingLiked ? photos : likedPhotos}
         likePhoto={likePhoto}
