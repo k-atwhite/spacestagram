@@ -1,5 +1,11 @@
 beforeEach(() => {
-  cy.visit('http://localhost:3000');
+  cy.fixture('mockData').then((data) => {
+    cy.intercept(
+      'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=9sRsIjAG7N8bqqRQAKa62riI2qnxklLWIs4DcDvX'
+    );
+  });
+
+  cy.visit('http://localhost:3000/');
 });
 
 describe('Homepage', () => {
