@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Card.css';
 
 const Card = ({
@@ -11,12 +11,19 @@ const Card = ({
   likePhoto,
   unlikePhoto
 }) => {
+  const [liked, setLikeStatus] = useState(false);
+
+  const handleLike = () => {
+    setLikeStatus(!liked);
+    likePhoto(entireCard);
+  };
+
   return (
     <div className="card">
       <i
-        className="fas fa-heart"
+        className={`fas fa-heart ${liked && 'favorite'}`}
         id={id}
-        onClick={(event) => likePhoto(entireCard)}
+        onClick={() => handleLike()}
       ></i>
       <img
         src={image}
