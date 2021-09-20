@@ -10,7 +10,7 @@
     Image-sharing from the final frontier
     <br />
     <br />
-    <a href="https://spacestagram-kw.netlify.app/">View Demo</a>
+    <a href="https://spacestagram-kw.netlify.app/">View App</a>
     ·
     <a href="https://github.com/chrisccerami/mars-photo-api">API Source</a>
     ·
@@ -69,9 +69,9 @@ npm start
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+<p align="center"><img src=https://media.giphy.com/media/yJJPleogN0lLOIRBiD/giphy.gif?cid=790b761149f6c8f73d64143a1004072ebcd9cbfe8e99f0df&rid=giphy.gif&ct=g ></p>
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+
 
 ## Roadmap
 
