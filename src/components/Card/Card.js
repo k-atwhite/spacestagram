@@ -29,6 +29,7 @@ const Card = ({
         id={id}
         tabIndex={id}
         onClick={() => handleLike()}
+        aria-label="heart shaped button to like image"
       ></i>
       <img
         src={image}
