@@ -63,7 +63,7 @@ Accessibility is key. My training as a Front End Developer emphasized the necess
 
 I ran lighthouse and received a score of 100. However, I think that lighthouse was acting imperfectly as I found that I could not naviate through the focusable elements with my tab button. When I fixed this issue but adding a "tab-index", my lighthouse score dropped to a 96. I think that this issue comes from using a font-awesome icon for my heart.
 
-<img width="650" alt="Screen Shot 2021-09-23 at 12 15 01 PM" src="https://user-images.githubusercontent.com/49215782/134561869-ae879b14-40ae-4d4e-b48f-25c9ef748dad.png">
+<p align="center"><img width="650" alt="Screen Shot 2021-09-23 at 12 15 01 PM" src="https://user-images.githubusercontent.com/49215782/134561869-ae879b14-40ae-4d4e-b48f-25c9ef748dad.png"></p>
 
 
 #### Responsiveness
