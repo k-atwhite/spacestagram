@@ -41,9 +41,9 @@
 
 ## About The Project
 
-I had a lot of fun working on this project for [Shopify's Front End Intern challenge](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit). Using NASA's incredible API offerings - I requested data and displayed the image, and some details about that particular image. The API is quite robust, and playing with different types of endpoints yeilds a wide array of possible image sets. I chose to display all the latest photos from the Mars Curiosity Rover.
+I had a lot of fun working on this project for [Shopify's Front End Intern challenge](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit). Using NASA's incredible API offerings - I requested data and displayed the image, and some details about that particular image. The API is quite robust, and playing with different types of endpoints yields a wide array of possible image sets. I chose to display all the latest photos from the Mars Curiosity Rover.
 
-I would like to showcase a simple, minimal interface, with small details to improve user exeperience while maintaining high accessibility.
+I would like to showcase a simple, minimal interface, with small details to improve user experience while maintaining high accessibility.
 
 ### Built With
 
